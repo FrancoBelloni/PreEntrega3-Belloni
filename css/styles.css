@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* --------------------------------------------------------------------------------------------------- HEADER */
+.header {
+    display: flex;
+    background-color: grey;
+    color: white;
+    flex-direction: column;
+    gap: 15px;
+    justify-items: space-between;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.list-item {
+    text-align: center;
+}
+
+/*MEDIAQUERIE-HEADER-TABLET*/
+@media (min-width: 768px)and (max-width:1200px) {
+    .header {
+        display: flex;
+        justify-items: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .header-list {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+/*MEDIAQUERIE-HEADER-DESK*/
+@media (min-width: 1201px) {
+    .header {
+        display: flex;
+        justify-items: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    .header-list {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------------BODY-ARSEC-SA*/
+.arsec-title {
+    text-align: center;
+    font-size: 1, 5rem;
+    padding: 15px;
+    border: solid grey;
+}
+
+.arsec-article {
+    font-size: 1rem;
+    padding: 15px;
+    text-align: justify;
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------GALERIA*/
+.galeria-title {
+    text-align: center;
+    font-size: 2rem;
+    padding: 15px;
+    border: solid grey;
+}
+
+.galeria-boating-club-si {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.galeria-barlomento-towers {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/*MEDIAQUERIE-BODY-TABLET*/
+@media (min-width: 768px)and (max-width:1200px) {
+    .galeria-boating-club-si {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 50vh);
+    }
+
+    .galeria-boating-club-si img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .galeria-barlomento-towers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 60vh);
+    }
+
+    .galeria-barlomento-towers img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*MEDIAQUERIE-BODY-DESK*/
+@media (min-width: 1201px) {
+    .galeria-boating-club-si {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 50vh);
+    }
+
+    .galeria-boating-club-si img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .galeria-barlomento-towers {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 60vh);
+    }
+
+    .galeria-barlomento-towers img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------FOOTER*/
+.footer {
+    background-color: grey;
+    color: white;
+    padding: 15px;
+}
+
+.footer-redes,
+.footer-list,
+.footer-contacto {
+    font-size: 1rem;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-footer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+/*MEDIAQUERIE-FOOOTER-TABLET*/
+@media (min-width: 768px)and (max-width:1200px) {
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/*MEDIAQUERIE-FOOTER-DESK*/
+@media (min-width: 1201px) {
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
