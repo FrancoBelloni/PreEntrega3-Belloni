@@ -19,7 +19,7 @@
         </div>
         <nav class="header.nav">
             <ul class="header-list">
-                <li class="list-item"> <i class="bi bi-house-door"></i><a href="/pages/index.html">Inicio</a></li>
+                <li class="list-item"> <i class="bi bi-house-door"></i><a href="/index.html">Inicio</a></li>
                 <li class="list-item"> <i class="bi bi-person"></i><a href="/pages/nosotros.html">Nosotros</a></li>
                 <li class="list-item"> <i class="bi bi-people"></i><a href="/pages/clientes.html">Clientes</a></li>
                 <li class="list-item"> <i class="bi bi-building"></i><a href="/pages/obras.html">Obras</a></li>
@@ -29,27 +29,34 @@
     </header>
     <main>
         <section>
-            <h3 class="arsec-title">Telefono</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consectetur id perspiciatis
-                voluptatum
-                quas totam facilis, ea sapiente quae voluptatibus, quos, sint dolore earum dicta corporis? Totam
-                officiis
-                voluptatibus fugit.</p>
-            <h3 class="arsec-title">WhatsApp</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nemo consequatur at porro neque et quo
-                rem
-                inventore quibusdam, consectetur, eos fugiat eum iure temporibus, dolorem cupiditate laborum maiores
-                nobis?
-            </p>
-            <h3 class="arsec-title">Como llegar</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.9602265431745!2d-58.37502058453586!3d-34.63044538045259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb34a3186389%3A0x82ac70bfd7232ff9!2sArsec%20Sa!5e0!3m2!1ses!2sar!4v1678279257331!5m2!1ses!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+            <div class="contact">
+                <h3 class="arsec-title"> <i class="bi bi-telephone"></i> Telefono</h3>
+                <p class="arsec-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consectetur id perspiciatis
+                    voluptatum
+                    quas totam facilis, ea sapiente quae voluptatibus, quos, sint dolore earum dicta corporis? Totam
+                    officiis
+                    voluptatibus fugit.</p>
+            </div>
+            <div class="contact">
+                <h3 class="arsec-title"> <i class="bi bi-whatsapp"></i>WhatsApp</h3>
+                <p class="arsec-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nemo consequatur at porro neque et
+                    quo
+                    rem
+                    inventore quibusdam, consectetur, eos fugiat eum iure temporibus, dolorem cupiditate laborum maiores
+                    nobis?
+                </p>
+            </div>
+            <div>
+                <h3 class="arsec-title"> <i class="bi bi-geo-alt-fill"></i>Como llegar</h3>
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.9602265431745!2d-58.37502058453586!3d-34.63044538045259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb34a3186389%3A0x82ac70bfd7232ff9!2sArsec%20Sa!5e0!3m2!1ses!2sar!4v1678279257331!5m2!1ses!2sar"
+                    width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
 
         <section>
-            <h2>Hace tu consulta</h2>
+            <h2 class="arsec-title">Hace tu consulta</h2>
             <div>
                 <label for="nombre-usuario">Nombre</label>
                 <input id="nombre-usuario" type="text">
@@ -58,14 +65,18 @@
                 <label for="apellido">Apellido</label>
                 <input id="apellido" type="text">
             </div>
-            <label for="telefono">Telefono o Celular</label>
-            <input type="tel">
+            <div>
+                <label for="telefono">Telefono o Celular</label>
+                <input type="tel">
+            </div>
             <div>
                 <label for="correo-clectronico">Correo Electronico</label>
                 <input type="email">
             </div>
-            <label for="consulta">Consulta</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div>
+                <label for="consulta">Consulta</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
             <div>
                 <input type="submit" value="Enviar Mensaje">
                 <input type="reset">
